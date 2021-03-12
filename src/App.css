@@ -1,12 +1,15 @@
 .App{
   display: flex;
-  justify-self: unset;
+  justify-content: space-around;
+  align-items: center;
+  
 }
 
 .box{
-  width: 40vw;
+  width: 431px;
   height: 50vh;
-  background: rgb(7, 235, 147);
+  margin: 10rem;
+  background: rgb(0 196 255);
 }
 
 .controls{
