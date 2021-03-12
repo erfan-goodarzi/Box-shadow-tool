@@ -15,3 +15,8 @@
 .controls{
   width: 40vw;
 }
+
+#result{
+  font-size: 19px;
+  padding: 29px 69px;
+}
