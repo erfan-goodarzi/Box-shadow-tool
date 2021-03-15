@@ -7,6 +7,7 @@ function App() {
   const [blur, setblur] = useState(10)
   const [color, setcolor] = useState('rgb(0 196 255)')
   const [ShadowColor, setShadowColor] = useState('#000')
+  const [BorderRadius, setBorderRadius] = useState(0)
 
 
   return (
@@ -19,6 +20,8 @@ function App() {
           <input type="range" min="-200" onChange={e => setver(e.target.value)} value={ver} max="200" />
           <label>Blur</label>
           <input type="range" min="-200" onChange={e => setblur(e.target.value)} value={blur} max="200" />
+          <label>BorderRadius</label>
+          <input type="range" min="-200" onChange={e => setBorderRadius(e.target.value)} value={BorderRadius} max="200" />
           <h6>Color </h6>
           <input type="color" value={color} onChange={e => setcolor(e.target.value)} />
           <p>Shadow color</p>
@@ -26,7 +29,7 @@ function App() {
         </p>
       </div>
       <div className="output">
-        <div className="box" style={{ boxShadow: `${hor}px ${ver}px ${blur}px ${ShadowColor}`, background: `${color}` }}>  <p id="result">box-shadow:{hor}px {ver}px {blur}px {ShadowColor}</p></div>
+        <div className="box" style={{ boxShadow: `${hor}px ${ver}px ${blur}px ${ShadowColor}`, background: `${color}` , borderRadius:`${BorderRadius}px` }}>  <p id="result">box-shadow:{hor}px {ver}px {blur}px {ShadowColor}</p></div>
       
       </div>
     </div>
