@@ -29,7 +29,7 @@ function App() {
         </p>
       </div>
       <div className="output">
-        <div className="box" style={{ boxShadow: `${hor}px ${ver}px ${blur}px ${ShadowColor}`, background: `${color}` , borderRadius:`${BorderRadius}px` }}>  <p id="result">box-shadow:{hor}px {ver}px {blur}px {ShadowColor}</p></div>
+        <div className="box" style={{ boxShadow: `${hor}px ${ver}px ${blur}px ${ShadowColor}`, background: `${color}` , borderRadius:`${BorderRadius}px` }}>  <p id="result">box-shadow:{hor}px {ver}px {blur}px {ShadowColor}  </p></div>
       
       </div>
     </div>
